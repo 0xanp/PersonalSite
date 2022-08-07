@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SQLIA Detection</title>
+	<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZRCYJW1M1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-9ZRCYJW1M1');
+    </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+<section class="s2">
+	<div class="nav-wrapper">
+
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<h3>An Experimental setup for Detecting SQLiAttacks using Machine Learning Algorithms</h3>
+
+		<p>This was a project I started back in 2019 when I first learned about databases and cybersecurity. I was the lead author for this paper under the wonderful mentorship of Dr. Vinitha Subburaj.
+		<br>
+		<br>
+		The premise is to build a machine learning model that can detect any malicious SQL queries before it get injected into the databases. The training data consist of benign user input and malicious queries from the amazing community of Kaggle.
+		<br>
+		<br>
+		The results are very promising with >90% accuracy on most of the algorithms trained. In comparison to the state of the art, this is either on par or better and it works against multiple types of SQL injection Attacks (SLQIA). 
+		<br>
+		<br>
+		More detailed discussion about results is in the paper linked below.
+		<br>
+		<br>
+		The future plan is to implement a sandbox-type website to showcase the model in practice.</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Scikit-learn</li>
+		</ul>
+
+		<h5>A snapshot of the results</h5>
+		<div class="img-container">
+			<img src="asset/sqlia-result.png">
+		</div>
+
+		<h5>Paper on CISSE 2020</h5>
+		<div>
+			<a href="https://cisse.info/journal/index.php/cisse/article/view/124/124">Read More</a>
+		</div>
+
+	</div>
+
+</section>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
